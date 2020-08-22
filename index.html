@@ -13,10 +13,17 @@
     <!-- ШАПКА САЙТА-->
     <header class="header"> 
         <div class="container">
-            <nav class="navigation">
-                 <a class="logo link" href="./index.html" aria-label="Логотип"> 
-                  <span class="logo-web" lang="en">Web</span> Studio
-                 </a> 
+            <a class="logo link" href="./index.html" aria-label="Логотип"> 
+                <span class="logo-web" lang="en">Web</span> Studio
+            </a> 
+            <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+               <svg width="24" height="16">
+                 <use class="icon-menu" href="./images/sprite.svg#icon-icon-menu"></use>
+                 <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+               </svg> 
+            </button>
+           <div class="menu-wrapper" data-menu>
+             <nav class="navigation">
                 <ul class="navigation-list list">
                  <li class="navigation-list-item">
                     <a class="navigation-list-link current link" href="./index.html">Студия</a>
@@ -28,8 +35,8 @@
                     <a class="navigation-list-link link" href="">Контакты</a>
                  </li>
                </ul>
-            </nav>
-            <div class="header-address">
+             </nav>
+             <div class="header-address">
              <address class="address list">
                 <ul class="address-list list">
                      <li class="address-list-item">
@@ -48,18 +55,19 @@
                         </a></li>
                 </ul>
                 </address>
+              </div>
             </div>
         </div>
     </header>
-    <main>
+    <!--<main> -->
         <!--HERO секция-->
-        <section class="hero">
+       <!-- <section class="hero">
             <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
             <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
-        </section>
+        </section>-->
 
         <!--О НАС-->
-        <section class="section"> 
+        <!--<section class="section"> 
             <div class="container"> 
              <h2 hidden> О НАС </h2>
              <ul class="us-list list">
@@ -101,10 +109,10 @@
                 </li>
              </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--ЧЕМ МЫ ЗАНИМАЕМСЯ-->
-        <section class="what">
+        <!--<section class="what">
             <div class="container">
              <h2 class="section-title">Чем мы занимаемся</h2>
              <ul class="we-do list">
@@ -122,10 +130,10 @@
                 </li>
              </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--НАША КОМАНДА-->
-        <section class="comand section">
+        <!--<section class="comand section">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="comand-list list">
@@ -271,10 +279,10 @@
                 </li>
              </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--Постоянные клиенты-->
-        <section class="clients section"> 
+        <!--<section class="clients section"> 
          <div class="container">
             <h2 class="client section-title">Постоянные клиенты</h2>
             <ul class="client-list list">
@@ -322,11 +330,11 @@
                 </li>
             </ul>
          </div>
-        </section>
-    </main>
+        </section>-->
+    <!--</main>-->
 
     <!--Футер-->
-    <footer class="footer">
+    <!--<footer class="footer">
         <div class="footer-content container">
             <div class="footer-contenta">
                 <div class="footer-content-logo">
@@ -393,10 +401,10 @@
                </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!--Модальное окно-->
-    <div class="backdrop is-hidden" data-modal>
+    <!--<div class="backdrop is-hidden" data-modal>
         <form class="modal-form">
             <button class="modal-close" type="button" data-modal-close>
               <svg class="icon-but-close" width="18px" height="18px">
@@ -439,7 +447,8 @@
            </label>
             <button type="submit" class="form-button" data-modal-close>Отправить</button>
         </form>
-    </div>
+    </div> -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
