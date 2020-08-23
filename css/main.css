@@ -951,19 +951,32 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }*/
 /* Hero section*/
 .hero {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header/header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-img-opt.jpg");
+  background-image: linear-gradient(to right,
+ rgba(47, 48, 58, 0.8),
+ rgba(47, 48, 58, 0.8) ),
+  url("../images/header/header-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
-.hero-title {
+ &-title {
   margin-bottom: 30px;
   font-style: normal;
   font-weight: 900;
@@ -972,10 +985,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-}
+  color: $title-dark-theme-color;
+  }
 
-.hero-button {
+  &-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -987,12 +1000,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196F3;
+  color: $title-dark-theme-color;
+  background-color: $accent-color ;
   border-radius: 4px;
   border: 1px solid transparent;
+  }
 }
-
+*/
 /*О НАС*/
 .us-list {
   display: flex;
