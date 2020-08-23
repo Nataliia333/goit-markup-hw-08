@@ -13,13 +13,20 @@
     <!-- ШАПКА САЙТА-->
     <header class="header"> 
         <div class="container">
-            <nav class="navigation">
-                 <a class="logo link" href="./index.html" aria-label="Логотип"> 
-                  <span class="logo-web" lang="en">Web</span> Studio
-                 </a> 
+            <a class="logo link" href="./index.html" aria-label="Логотип"> 
+                <span class="logo-web" lang="en">Web</span> Studio
+            </a> 
+            <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+               <svg width="40" height="40">
+                 <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                 <use class="icon-close" href="./images/sprite.svg#icon-close-menu"></use>
+               </svg> 
+            </button>
+           <div class="menu-wrapper" data-menu>
+             <nav class="navigation">
                 <ul class="navigation-list list">
-                 <li class="navigation-list-item">
-                    <a class="navigation-list-link link" href="./index.html">Студия</a>
+                 <li class="navigation-list-item ">
+                    <a class="navigation-list-link  link" href="./index.html">Студия</a>
                  </li>
                  <li class="navigation-list-item">
                     <a class="navigation-list-link current link" href="./portfolio.html">Портфолио</a>
@@ -28,8 +35,8 @@
                     <a class="navigation-list-link link" href="">Контакты</a>
                  </li>
                </ul>
-            </nav>
-            <div class="header-address">
+             </nav>
+             <div class="header-address">
              <address class="address list">
                 <ul class="address-list list">
                      <li class="address-list-item">
@@ -48,6 +55,7 @@
                         </a></li>
                 </ul>
                 </address>
+              </div>
             </div>
         </div>
     </header>
