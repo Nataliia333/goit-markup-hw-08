@@ -1,0 +1,83 @@
+/*Form*/
+
+.footer-podpiska-form {
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    }
+}
+
+ 
+/*.podpiska {
+    padding-top: 72px;
+    padding-bottom: 94px;
+}
+    
+.footer-podpiska-form {
+    display: flex;
+}
+    
+.footer-text-social {
+    margin-right: 94px;  
+}
+}*/
+
+.input-email {
+    height: 50px;  
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background: $footer-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    @media screen and (min-width: 768px){
+    width: 450px;
+    margin-left: calc((100% - 450px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-left: 0;
+    margin-right: 12px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+}
+
+.icon-subscribe-button-footer {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: $title-dark-theme-color;   
+}
+    
+.subscribe-button {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: $title-dark-theme-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    @media screen and (max-width: 1199px) {
+        margin-left: calc((100% - 200px) / 2);
+    }
+}
+

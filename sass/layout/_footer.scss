@@ -1,6 +1,88 @@
 /*Футер*/
 
 .footer {
+    background-color: $footer-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .logo {
+        color: $title-dark-theme-color;
+        margin-bottom: 20px;
+        display: block;
+        padding-top: 0;
+        padding-bottom: 0;
+    @media screen and (max-width: 1199px){
+        text-align: center;
+     }
+
+    }
+}
+
+
+.footer-content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 76px;
+    padding-right: 89px;  
+    }
+}
+
+/*.footer-content {
+    @media screen and (min-width: 1200px) {
+        margin-right: 69px;  
+    }
+}*/
+.footer .address {
+    @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    display: block;
+    }
+}
+
+.footer .address-list-item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;  
+    }
+}
+
+.footer-text-social {
+    @media screen and (max-width: 479px) {
+    width: 209px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 209px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+  }
+
+/*
+.footer {
     background: $footer-color;
     height: 252px;
 
@@ -14,11 +96,11 @@
         margin-bottom: 9px;
     }
 }
-  
+ 
 .footer-content {
     display: flex;
-}
-    
+}*/
+   /* 
 .footer-contenta {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -29,22 +111,14 @@
     padding-top: 72px;
     padding-bottom: 100px;
 }
-    
+  */
 .footer-list-link {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @extend %font-for-footer-link;
     color: $title-dark-theme-color;
 }
     
 .footer-list-linkm {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @extend %font-for-footer-link;
     color: rgba(255, 255, 255, 0.6);
 }
     
@@ -56,8 +130,12 @@
     text-transform: uppercase;
     color: $title-dark-theme-color;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+    text-align: center;
+    }
 }
-    
+  
 .footer-social {
     display: flex;
     justify-content: space-between;
@@ -86,61 +164,4 @@
     width: 20px;
     height: 20px;
     fill: $title-dark-theme-color;
-}
-    
-.podpiska {
-    padding-top: 72px;
-    padding-bottom: 94px;
-}
-    
-.footer-podpiska-form {
-    display: flex;
-}
-    
-.footer-text-social {
-    margin-right: 94px;  
-}
-    
-.input-email {
-    width: 358px;
-    height: 50px;  
-    margin-right: 12px;
-    padding-left: 16px;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    background: $footer-color;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-}
-
-.icon-subscribe-button-footer {
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    fill: $title-dark-theme-color;   
-}
-    
-.subscribe-button {
-    display: flex;
-    align-items: center;
-    width: 200px;
-    height: 50px;
-    padding-left: 29px;
-    padding-right: 28px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: $main-font;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    color: $title-dark-theme-color;
-    background-color: $accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
 }

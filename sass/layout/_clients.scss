@@ -31,7 +31,7 @@
 .client-list-item {
     width: calc((100% - 30px) / 2);
 
-    @media screen and (min-width: 786px) {
+    @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 3);
     }
 
@@ -39,14 +39,13 @@
     width: calc((100% - 150px) / 6);
     }
 
-    &:not(:nth-last-child(-n + 3))  {
-     @media screen and (min-width: 786px) and (max-width: 1199px) {
+    &:not(:nth-last-child(-n + 2))  {
+    @media screen and (max-width: 767px){
         margin-bottom: 30px;
         }
     }
-
-    &:not(:nth-last-child(-n + 3)) {
-     @media screen and (max-width: 1199px) {
+    &:not(:nth-last-child(-n + 3))  {
+     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 30px;
         }
     }
@@ -62,7 +61,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   /*width: 170px;*/
     height: 90px;
     border: 1px solid $siriy-color;
     border-radius: 4px;
