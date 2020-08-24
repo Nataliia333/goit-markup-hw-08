@@ -1,8 +1,13 @@
 /*ЧЕМ МЫ ЗАНИМАЕМСЯ*/
+
+.what {
+ @media screen and (max-width: 1199px) {
+ display: none;
+} 
+}
 .what {
     padding-bottom: 94px;
 }
-
     
 .we-do{
     display: flex;

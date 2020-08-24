@@ -1196,6 +1196,12 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*ЧЕМ МЫ ЗАНИМАЕМСЯ*/
+@media screen and (max-width: 1199px) {
+  .what {
+    display: none;
+  }
+}
+
 .what {
   padding-bottom: 94px;
 }
