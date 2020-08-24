@@ -1,22 +1,66 @@
 /*Постоянные клиенты*/
 
-.client-list {
+@media screen and (max-width: 1199px) {
+    .client-list {
+    flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .client-list {
     display: flex;
-    justify-content: space-between;
+    }
 }
 
-.client-list-item:not(:last-child) {
-  margin-right: 30px;
+/*@media screen and (max-width: 767px) {
+    .client-list-item {
+    width: calc((100% - 30px) / 2);
+
+    &:not(:nth-child(2n)) {
+    margin-right: 30px;
+    }
+    
+    &:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+    }
+    }
+}*/
+.client-list-item {
+    width: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 786px) {
+    width: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+    }
+
+    *&:not(:nth-last-child(-n + 3))  {
+     @media screen and (min-width: 786px) and (max-width: 1199px) {
+        margin-bottom: 30px;
+        }
+    }
+
+    &:not(:nth-last-child(-n + 2)) {
+     @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+        }
+    }
 } 
+
+/*.client-list-item:not(:last-child) {
+  margin-right: 30px;
+}*/ 
 
 .client-link {
     display: flex;
-    width: 170px;
+    justify-content: center;
+    align-items: center;
+   /*width: 170px;*/
     height: 90px;
     border: 1px solid $siriy-color;
     border-radius: 4px;
-    justify-content: center;
-    align-items: center; 
+    justify-content: center; 
     fill: $siriy-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
