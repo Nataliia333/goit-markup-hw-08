@@ -1,17 +1,42 @@
 /*О НАС*/
 .us-list {
     display: flex; 
-    justify-content: space-between;
-}
+    flex-wrap: wrap;
     
-.us-list-item {
-    width: 270px;
-    
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
+@media screen and (min-width: 1200px) {
+   .us-list-item  {
+    width: calc((100% - 90px) / 4);
+   }
+   .us-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .us-list-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .us-list-item  {
+    width: calc((100% - 30px) / 2);
+    }
+    .us-list-item:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;  
+    }
+    .us-list-item:not(:nth-child(2n)) {
+        margin-right: 30px;  
+    }
+
+}
+ 
 .us-list-icon {
     display: flex;
     height: 120px;
@@ -35,6 +60,11 @@
     text-transform: uppercase;
     color: $title-light-theme-color;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+    text-align: center;
+    }
+
 }
     
 .text {
