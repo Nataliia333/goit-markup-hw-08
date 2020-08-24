@@ -1,14 +1,18 @@
 /*Постоянные клиенты*/
+.client-list {
+    display: flex;
+    }
 
 @media screen and (max-width: 1199px) {
     .client-list {
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     }
 }
-@media screen and (min-width: 1200px) {
-    .client-list {
-    display: flex;
-    }
+
+.client-list {
+    flex-wrap: wrap;
 }
 
 /*@media screen and (max-width: 767px) {
@@ -35,22 +39,24 @@
     width: calc((100% - 150px) / 6);
     }
 
-    *&:not(:nth-last-child(-n + 3))  {
+    &:not(:nth-last-child(-n + 3))  {
      @media screen and (min-width: 786px) and (max-width: 1199px) {
         margin-bottom: 30px;
         }
     }
 
-    &:not(:nth-last-child(-n + 2)) {
+    &:not(:nth-last-child(-n + 3)) {
      @media screen and (max-width: 1199px) {
         margin-bottom: 30px;
         }
     }
 } 
 
-/*.client-list-item:not(:last-child) {
+@media screen and (min-width: 1200px) {
+.client-list-item:not(:last-child) {
   margin-right: 30px;
-}*/ 
+}
+}
 
 .client-link {
     display: flex;
