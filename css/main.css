@@ -1791,7 +1791,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.03em;
   color: #212121;
   padding: 6px 22px;
-  background: #F5F4FA;
+  background-color: #F5F4FA;
   border-radius: 4px;
   border: 1px solid transparent;
   cursor: pointer;
@@ -1814,7 +1814,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-galery-list {
-  background: #ffffff;
+  background-color: #ffffff;
   box-sizing: border-box;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
