@@ -507,11 +507,14 @@ img {
 /*Модальное окно*/
 .backdrop {
   position: fixed;
+  display: flex;
+  justify-content: center;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  pointer-events: initial;
 }
 
 .backdrop.is-hidden {
@@ -519,25 +522,30 @@ img {
   pointer-events: none;
 }
 
-.modal-form {
+.modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 609px;
+  max-width: 480px;
   width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
+.modal-form {
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 1200px) {
-  .modal-form {
-    height: 581px;
-    width: 528px;
-  }
 }
 
 .modal-form-title {
@@ -559,7 +567,7 @@ img {
 }
 
 .modal-form-input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -598,7 +606,7 @@ img {
 }
 
 .modal-form-textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
