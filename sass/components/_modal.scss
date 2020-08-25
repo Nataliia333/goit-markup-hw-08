@@ -11,6 +11,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     pointer-events: initial;
+    z-index: 101;
 }
 
 .backdrop.is-hidden {
