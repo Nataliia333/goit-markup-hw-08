@@ -42,6 +42,14 @@ background-color: $title-dark-theme-color;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 479px) {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+  }
+
 }
 
 .modal-form-title {
@@ -69,6 +77,10 @@ letter-spacing: 0.03em;
     margin-bottom: 28px;
     outline: transparent;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 479px) {
+        margin-bottom: 12px;
+    }
 }
 
 .modal-form-label {
@@ -110,6 +122,10 @@ letter-spacing: 0.03em;
     padding: 12px 16px;
     outline: transparent;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 479px) {
+        margin-bottom: 10px;
+    }
 }
 
 .modal-form-label-textarea {
@@ -181,10 +197,12 @@ letter-spacing: 0.03em;
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+  
 }
 
 .checkbox {
     display: flex;
+    
  }
  .modal-form-custom-checkbox {
     display: inline-block; 
@@ -193,6 +211,7 @@ letter-spacing: 0.03em;
     margin-right: 8px;
     border: 2px solid $title-light-theme-color;
     border-radius: 2px;
+    flex-shrink: 0;
  }
 
 .modal-form-checbox:checked + .modal-form-custom-checkbox {
