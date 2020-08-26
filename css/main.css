@@ -1663,6 +1663,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 209px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 60px;
   }
 }
 
